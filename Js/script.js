@@ -97,6 +97,32 @@ $(function () {
     );
   });
 
+  // back to top button
+  $(".back_top_btn").click(function () {
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      2000
+    );
+  });
 
-  
+  $(window).scroll(function () {
+    const scroll_top = $(this).scrollTop();
+    console.log(scroll_top);
+    if (scroll_top > 450) {
+      $(".back_top_btn")
+        .addClass("animate__animated animate__fadeInDownBig")
+        .fadeIn(2000);
+    } else {
+      $(".back_top_btn")
+        .removeClass("animate__animated animate__fadeInDownBig")
+        .fadeOut();
+    }
+  });
+
+  // Pre Loader js start
+  $(window).on("load", function () {
+    $(".pre_loader").delay(1700).fadeOut(500);
+  });
 });
