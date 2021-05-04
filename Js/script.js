@@ -123,7 +123,7 @@ $(function () {
 
   // Pre Loader js start
   $(window).on("load", function () {
-    $(".pre_loader").delay(1700).fadeOut(500);
+    $(".pre_loader").delay(1200).fadeOut(500);
   });
 
   // validation
