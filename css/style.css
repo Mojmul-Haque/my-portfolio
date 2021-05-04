@@ -358,6 +358,7 @@ p {
   color: #fff;
   position: relative;
   z-index: 1;
+  background: var(--secendory-color);
 }
 
 .my-skill:after {
@@ -370,17 +371,6 @@ p {
   background: var(--warning-color);
   transform: scale(0);
   transition: all linear 0.3s;
-  z-index: -1;
-}
-.my-skill:before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 0;
-  background: #ff9600;
-  width: 100%;
-  height: 100%;
-  transform: scale(1);
   z-index: -1;
 }
 
@@ -399,10 +389,6 @@ p {
 
 .my-skill:hover:after {
   transform: scale(1);
-}
-
-.my-skill:hover:before {
-  transform: scale(0);
 }
 
 /* skill part  end  */
