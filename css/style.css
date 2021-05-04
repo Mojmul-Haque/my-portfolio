@@ -692,3 +692,15 @@ footer #contact_part {
   height: 50px;
   cursor: pointer;
 }
+
+.blast-icon i {
+  animation: round 5s ease infinite;
+}
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
