@@ -34,3 +34,16 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+// dark theme
+
+const darkIcon = document.getElementById("dark-icon");
+darkIcon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    darkIcon.src = "images/sun.png";
+  } else {
+    darkIcon.src = "images/moon.png";
+  }
+};
+// dd

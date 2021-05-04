@@ -125,7 +125,4 @@ $(function () {
   $(window).on("load", function () {
     $(".pre_loader").delay(1200).fadeOut(500);
   });
-
-  // validation
-  
 });
