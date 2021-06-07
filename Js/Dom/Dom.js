@@ -1,14 +1,15 @@
 import { skillsInfo } from "../../lib/skills.js";
 import { projects, projectsBtn } from "../../lib/projects.js";
-console.log(projectsBtn);
-// skill part start here
-const showSkill = document.querySelector(".skill-inner");
-const skillDiv = document.createElement("div");
-skillDiv.className = "row justify-content-center";
+import { blogsInfo } from "../../lib/blogs.js";
+import { contactInfo, contactForm } from "../../lib/contact.js";
+console.log(contactInfo);
 
 // ===============================================================
 //                  skill part start here
 // ===============================================================
+const showSkill = document.querySelector(".skill-inner");
+const skillDiv = document.createElement("div");
+skillDiv.className = "row justify-content-center";
 skillsInfo.map((info) => {
   skillDiv.innerHTML += ` 
                         <div class="col-lg-3 ${info.className} col-md-4 offset-1">
@@ -93,4 +94,91 @@ project.appendChild(projectDiv);
 
 // ===============================================================
 //                  project info end here
+// ===============================================================
+
+// ===============================================================
+//                  blogs info end here
+// ===============================================================
+
+const blogInner = document.querySelector(".blog_inner");
+const blogRow = document.createElement("div");
+blogRow.className = "row";
+
+blogsInfo.map((info) => {
+  blogRow.innerHTML += `
+            <div class="col-lg-6 col-sm-6 ${info.className}">
+                <div class="blog_main">
+                  <div class="blog_img">
+                    <img
+                      src="${info.blogImage}"
+                      class="img-fluid w-100 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog_text">
+                    <h6>
+                     ${info.data}
+                      <span data-blast="bgColor">${info.blogType}</span>
+                    </h6>
+                    <a href="#" class="title"
+                      >  ${info.title}</a
+                    >
+
+                    <p>
+                    ${info.discription}
+                    </p>
+                    <a data-blast="bgColor" href="${info.viewLink}" class="all_btn"
+                      >Read More <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+             </div>
+    `;
+});
+
+blogInner.appendChild(blogRow);
+
+// ===============================================================
+//                  blogs info end here
+// ===============================================================
+
+// ===============================================================
+//                  contacts info end here
+// ===============================================================
+const contactRight = document.querySelector(".contact-right-side");
+const detailsDiv = document.createElement("div");
+detailsDiv.className = "contact_details";
+
+contactInfo.map((info) => {
+  detailsDiv.innerHTML += `
+    <h5 data-blast="color">
+        <i class="${info.icon}"></i> ${info.title}
+        <span>${info.subTitle}</span>
+    </h5>
+    `;
+});
+contactRight.appendChild(detailsDiv);
+
+const form = document.querySelector(".form-input");
+const formRow = document.createElement("div");
+formRow.className = "row";
+
+contactForm.map((info) => {
+  formRow.innerHTML += `
+    <div class="col-lg-6">
+    <input
+      type="${info.type}"
+      class="form-control"
+      placeholder="${info.placeholder}"
+      required
+    />
+    <div class="invalid-feedback">
+      your ${info.errorMsg} is required!
+    </div>
+  </div>
+    `;
+});
+form.appendChild(formRow);
+// ===============================================================
+//                  contacts info end here
 // ===============================================================
