@@ -169,6 +169,7 @@ contactForm.map((info) => {
       type="${info.type}"
       class="form-control"
       placeholder="${info.placeholder}"
+      name="${info.typeName}"
       required
     />
     <div class="invalid-feedback">

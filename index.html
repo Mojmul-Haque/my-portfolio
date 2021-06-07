@@ -270,7 +270,7 @@
                   <p>
                     Thank you, visiting my portfolio. If you have any question
                     about myself, please contact me
-                    <a href="mailto:mojmul89@gmail.com" data-blast="color"
+                    <a href="mailto:zuizihad@gmail.com" data-blast="color"
                       >mojmul89@gmail.com</a
                     >
                   </p>
@@ -360,21 +360,32 @@
                   <div class="col-lg-8 col-sm-6">
                     <h4 data-blast="color">Message Me</h4>
                     <form
-                      action=" mailto:zuizihad@gmail.com"
+                      action="https://formsubmit.co/mojmul89@gmail.com"
+                      method="POST"
                       class="needs-validation"
                       novalidate
                     >
+                    <input type="hidden" name="_subject" value="from-portfolio-website">
+
                       <div class="form-input"></div>
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="./confirm.html"
+                      />
                       <div>
                         <textarea
                           class="form-control"
                           placeholder="Your Message"
+                          name="message"
                           required
                         ></textarea>
                         <div class="invalid-feedback">
                           your message is required!
                         </div>
                       </div>
+                      
+
                       <button type="submit" class="all_btn">Submit</button>
                     </form>
                   </div>
