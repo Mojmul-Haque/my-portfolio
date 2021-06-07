@@ -109,7 +109,7 @@ $(function () {
 
   $(window).scroll(function () {
     const scroll_top = $(this).scrollTop();
-    console.log(scroll_top);
+    // console.log(scroll_top);
     if (scroll_top > 450) {
       $(".back_top_btn")
         .addClass("animate__animated animate__fadeInDownBig")
