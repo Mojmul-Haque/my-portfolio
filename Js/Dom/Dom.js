@@ -2,7 +2,6 @@ import { skillsInfo } from "../../lib/skills.js";
 import { projects, projectsBtn } from "../../lib/projects.js";
 import { blogsInfo } from "../../lib/blogs.js";
 import { contactInfo, contactForm } from "../../lib/contact.js";
-console.log(contactInfo);
 
 // ===============================================================
 //                  skill part start here
