@@ -125,4 +125,12 @@ $(function () {
   $(window).on("load", function () {
     $(".pre_loader").delay(1200).fadeOut(500);
   });
+
+  //
+  $(window).on("load", () => {
+    console.log('window loaded');
+    $("#project_part ul li:first-child").trigger("click",()=>{
+      console.log('click button');
+    });
+  });
 });
