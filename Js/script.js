@@ -126,7 +126,7 @@ $(function () {
     $(".pre_loader").delay(1200).fadeOut(500);
   });
 
-  //
+  //project btn error
   $(window).on("load", () => {
     console.log('window loaded');
     $("#project_part ul li:first-child").trigger("click",()=>{
