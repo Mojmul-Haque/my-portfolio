@@ -118,7 +118,7 @@ blogsInfo.map((info) => {
                   </div>
                   <div class="blog_text">
                     <h6>
-                     ${info.data}
+                     ${info.date}
                       <span data-blast="bgColor">${info.blogType}</span>
                     </h6>
                     <a href="#" class="title"
