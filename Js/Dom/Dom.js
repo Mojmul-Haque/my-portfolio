@@ -68,6 +68,7 @@ projects.map((info) => {
           <a
             class="btn btn-danger my-2"
             href="${info.githubLink}"
+            target="_blank"
             ><i class="${info.icon1}"></i> <span>GitHub</span></a
           >
           <a
