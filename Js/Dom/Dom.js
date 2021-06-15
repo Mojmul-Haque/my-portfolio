@@ -74,6 +74,7 @@ projects.map((info) => {
           <a
             class="btn btn-success"
             href="${info.liveProject}"
+            target="_blank"
             ><i class="${info.icon2}"></i> <span>Live Project</span></a
           >
         </div>
